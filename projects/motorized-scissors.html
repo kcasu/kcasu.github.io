@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Electric Motorized Scissors — Kavya Casula</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600&family=Inter:ital,wght@0,400;0,700;1,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../styles/main.css">
+<style>
+  .project-hero {
+    background: var(--sunset);
+    position: relative;
+    overflow: hidden;
+    padding: 3rem clamp(1rem, 6vw, 4rem) 4.5rem;
+  }
+  .project-hero .kicker {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: var(--burnt-sienna);
+  }
+  .project-hero h1 {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 600;
+    font-size: clamp(2.6rem, 7vw, 5rem);
+    line-height: 1.05;
+    color: var(--midnight-green);
+    max-width: 14ch;
+    margin-top: 0.25rem;
+  }
+  .project-hero .summary {
+    margin-top: 1.25rem;
+    max-width: 52ch;
+    line-height: 1.6;
+    font-size: 1.05rem;
+  }
+  .project-hero .tags { margin-top: 1.5rem; }
+  .heronum {
+    position: absolute;
+    right: clamp(0.5rem, 3vw, 3rem);
+    top: 50%;
+    transform: translateY(-50%);
+    font-family: 'Oswald', sans-serif;
+    font-weight: 600;
+    font-size: clamp(8rem, 24vw, 18rem);
+    line-height: 1;
+    color: var(--burnt-sienna);
+    opacity: 0.45;
+    pointer-events: none;
+    user-select: none;
+  }
+  main {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 4rem clamp(1rem, 6vw, 4rem) 5rem;
+  }
+  main h2 {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 600;
+    font-size: 2rem;
+    color: var(--midnight-green);
+    margin: 2.5rem 0 1rem;
+  }
+  main h2:first-child { margin-top: 0; }
+  main p { line-height: 1.65; }
+  main p + p { margin-top: 1.25rem; }
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+  }
+  .placeholder-tile {
+    border: 2px dashed var(--myrtle-green);
+    border-radius: 16px;
+    aspect-ratio: 4 / 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--myrtle-green);
+    font-weight: 600;
+    background: rgba(94, 170, 168, 0.08);
+  }
+  .back {
+    display: inline-block;
+    margin-top: 3rem;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 500;
+    color: var(--burnt-sienna);
+    text-decoration: none;
+  }
+  .back:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+
+  <div class="navbar">
+    <a class="logo" href="../index.html">kc</a>
+    <nav>
+      <a href="../index.html#projects">Projects</a>
+      <a href="../index.html#about">About</a>
+      <a href="../index.html#camera-roll">KC's Camera Roll</a>
+      <a href="../index.html#flxpped">Flxpped Co</a>
+    </nav>
+  </div>
+
+  <header class="project-hero">
+    <div class="heronum">03</div>
+    <p class="kicker">Project 03</p>
+    <h1>Electric Motorized Scissors</h1>
+    <p class="summary">Kitchen scissors re-engineered with a detachable motorized drivetrain to improve accessibility for users with limited hand and wrist mobility.</p>
+    <div class="tags"><span class="tag">Accessibility</span><span class="tag">Mechatronics</span><span class="tag">Prototyping</span></div>
+  </header>
+
+  <main>
+    <h2>Overview</h2>
+    <p>My team and I re-engineered standard kitchen scissors to improve accessibility for users with limited hand and wrist mobility. By calculating the torque requirements for common kitchen tasks, we developed a custom, detachable drivetrain.</p>
+    <p>I spearheaded the electrical packaging and the mechanism for the detachable drivetrain, resulting in a fully functional prototype capable of cutting paper and soft produce.</p>
+
+    <h2>Gallery</h2>
+    <!-- PLACEHOLDER: swap these tiles for real photos, renders, CAD views, CFD plots -->
+    <div class="gallery">
+      <div class="placeholder-tile">Graphic coming soon</div>
+      <div class="placeholder-tile">Graphic coming soon</div>
+      <div class="placeholder-tile">Graphic coming soon</div>
+    </div>
+
+    <a class="back" href="../index.html#projects">&larr; Back to all projects</a>
+  </main>
+
+</body>
+</html>

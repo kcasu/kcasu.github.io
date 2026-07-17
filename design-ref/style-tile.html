@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>KC — Style Tile</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600&family=Inter:ital,wght@0,400;0,700;1,700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --midnight-green: #104F55;
+    --myrtle-green: #32746D;
+    --verdigris: #5EAAA8;
+    --burnt-sienna: #E07A5F;
+    --sunset: #F2CC8F;
+    --linen: #F4EAE0;
+    --ink: #1E1E1E;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: 'Inter', sans-serif;
+    background: var(--linen);
+    color: var(--ink);
+    padding: 3rem clamp(1rem, 5vw, 4rem);
+  }
+  h2.section {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--midnight-green);
+    margin: 3rem 0 1rem;
+    font-size: 1.1rem;
+  }
+  /* palette */
+  .swatches { display: flex; flex-wrap: wrap; gap: 0; border-radius: 12px; overflow: hidden; box-shadow: 0 0 0 1px rgba(0,0,0,0.12); }
+  .swatch { flex: 1 1 120px; height: 130px; display: flex; flex-direction: column; justify-content: flex-end; padding: 0.75rem; font-size: 0.75rem; }
+  .swatch strong { display: block; font-size: 0.8rem; }
+  .light { color: #fff; }
+  .dark { color: var(--ink); }
+  /* navbar sample */
+  .navbar {
+    background: var(--myrtle-green);
+    border-radius: 999px;
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 1.1rem 2.2rem;
+    color: #fff;
+  }
+  .navbar .logo { font-family: 'Oswald', sans-serif; font-weight: 600; font-size: 2rem; line-height: 1; }
+  .navbar nav { display: flex; gap: 2rem; font-family: 'Oswald', sans-serif; font-weight: 500; font-size: 1.05rem; }
+  .navbar nav a { color: #fff; text-decoration: none; }
+  /* type */
+  .display {
+    font-family: 'Oswald', sans-serif; font-weight: 600;
+    font-size: clamp(3rem, 9vw, 6rem); line-height: 1.05;
+    color: var(--midnight-green);
+  }
+  .subtitle { font-size: clamp(1.2rem, 3vw, 1.8rem); color: var(--myrtle-green); margin-top: 0.25rem; }
+  .body-sample { max-width: 42ch; margin-top: 1rem; line-height: 1.6; }
+  /* hero mock */
+  .hero {
+    position: relative; border-radius: 12px; overflow: hidden;
+    background: linear-gradient(180deg, #BBD3CD 0%, #8FAF9F 55%, #4E5F4B 100%);
+    padding: 6rem 2rem 7rem; text-align: center; color: #fff; margin-top: 0.5rem;
+  }
+  .hero h1 { font-family: 'Oswald', sans-serif; font-weight: 600; font-size: clamp(2.5rem, 7vw, 5rem); }
+  .hero p { font-size: clamp(1rem, 2.5vw, 1.5rem); opacity: 0.95; }
+  .hero .note { position: absolute; bottom: 0.75rem; right: 1rem; font-size: 0.7rem; opacity: 0.7; }
+  /* about mock */
+  .about {
+    background: var(--sunset); border-radius: 12px;
+    padding: 3rem; display: flex; gap: 3rem; align-items: center;
+    position: relative; overflow: hidden; margin-top: 0.5rem;
+  }
+  .arch {
+    flex: 0 0 180px; height: 260px;
+    background: linear-gradient(160deg, #7f9c81, #46604c);
+    border: 10px solid var(--myrtle-green);
+    outline: 8px solid #fff;
+    border-radius: 999px 999px 12px 12px;
+  }
+  .about .text { max-width: 40ch; line-height: 1.55; }
+  .bigtype {
+    position: absolute; right: -0.4em; top: 50%; transform: translateY(-50%);
+    font-family: 'Oswald', sans-serif; font-weight: 600;
+    font-size: 7rem; line-height: 0.95; text-align: right;
+    color: var(--burnt-sienna); opacity: 0.55; pointer-events: none;
+  }
+</style>
+</head>
+<body>
+  <h1 class="display">Kavya Casula</h1>
+  <p class="subtitle">Engineering X Design — style tile from the Figma file</p>
+
+  <h2 class="section">Palette</h2>
+  <div class="swatches">
+    <div class="swatch light" style="background:#104F55"><strong>#104F55</strong>Midnight green</div>
+    <div class="swatch light" style="background:#32746D"><strong>#32746D</strong>Myrtle green</div>
+    <div class="swatch light" style="background:#5EAAA8"><strong>#5EAAA8</strong>Verdigris</div>
+    <div class="swatch light" style="background:#E07A5F"><strong>#E07A5F</strong>Burnt sienna</div>
+    <div class="swatch dark" style="background:#F2CC8F"><strong>#F2CC8F</strong>Sunset</div>
+    <div class="swatch dark" style="background:#F4EAE0"><strong>#F4EAE0</strong>Linen</div>
+  </div>
+
+  <h2 class="section">Navbar</h2>
+  <div class="navbar">
+    <span class="logo">kc</span>
+    <nav>
+      <a href="#">Projects</a><a href="#">About</a><a href="#">KC's Camera Roll</a><a href="#">Flxpped Co</a>
+    </nav>
+  </div>
+
+  <h2 class="section">Type</h2>
+  <div class="display" style="font-size:3.5rem">Title Text — Oswald</div>
+  <p class="body-sample">Body text — Inter. Hi! I'm Kavya. I'm an engineer with an
+  insane passion for making things look and feel <strong><em>cool</em></strong>.
+  Bold and italic are used inline for emphasis, with generous line height.</p>
+
+  <h2 class="section">Hero pattern <span style="font-weight:400; text-transform:none">(gradient stands in for the photo)</span></h2>
+  <div class="hero">
+    <h1>Kavya Casula</h1>
+    <p>Engineering X Design</p>
+    <span class="note">real version: full-bleed photograph</span>
+  </div>
+
+  <h2 class="section">About pattern</h2>
+  <div class="about">
+    <div class="arch"></div>
+    <div class="text">
+      <p><strong>Hi! I'm Kavya.</strong> Arched photo frame with a Myrtle green
+      border and white outline, warm Sunset background, and oversized
+      Burnt-sienna place names cropping off the edge.</p>
+    </div>
+    <div class="bigtype">PGH<br>NYC<br>NJ</div>
+  </div>
+</body>
+</html>
