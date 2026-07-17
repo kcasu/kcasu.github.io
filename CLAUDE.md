@@ -28,8 +28,8 @@ and contact info. Priorities are speed, simplicity, and easy content updates.
 
 | Decision | Status |
 |---|---|
-| Tech stack | **Undecided** — start with plain HTML/CSS; revisit if it gets unwieldy |
-| Hosting | Undecided (GitHub Pages, Netlify, and Vercel are candidates) |
+| Tech stack | **Plain HTML/CSS** (shared tokens in `styles/main.css`; no build step, no Node) |
+| Hosting | **GitHub Pages** — repo `kcasu/kcasu.github.io`, live at https://kcasu.github.io (deploy = push to `main`) |
 | Design direction | **Kavya's Figma file is the style reference** — see `design-ref/STYLE-GUIDE.md` (palette, type, patterns) and `design-ref/figma-*.png` exports; `design-ref/style-tile.html` is a browsable summary |
 | Version control | Not initialized yet — `git init` when real work starts |
 
