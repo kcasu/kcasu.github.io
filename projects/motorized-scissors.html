@@ -73,16 +73,15 @@
     gap: 1.5rem;
     margin-top: 1.5rem;
   }
-  .placeholder-tile {
-    border: 2px dashed var(--myrtle-green);
+  .gallery figure img {
+    width: 100%;
+    display: block;
     border-radius: 16px;
-    aspect-ratio: 4 / 3;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  }
+  .gallery figcaption {
+    margin-top: 0.5rem;
+    font-size: 0.85rem;
     color: var(--myrtle-green);
-    font-weight: 600;
-    background: rgba(94, 170, 168, 0.08);
   }
   .back {
     display: inline-block;
@@ -121,11 +120,19 @@
     <p>I spearheaded the electrical packaging and the mechanism for the detachable drivetrain, resulting in a fully functional prototype capable of cutting paper and soft produce.</p>
 
     <h2>Gallery</h2>
-    <!-- PLACEHOLDER: swap these tiles for real photos, renders, CAD views, CFD plots -->
     <div class="gallery">
-      <div class="placeholder-tile">Graphic coming soon</div>
-      <div class="placeholder-tile">Graphic coming soon</div>
-      <div class="placeholder-tile">Graphic coming soon</div>
+      <figure>
+        <img src="../assets/projects/scissors-01.jpg" alt="SolidWorks assembly showing the motor and gear reduction inside the housing">
+        <figcaption>SolidWorks assembly &mdash; motor and gear reduction inside the housing</figcaption>
+      </figure>
+      <figure>
+        <img src="../assets/projects/scissors-02.jpg" alt="Assembled prototype wired to its battery pack and switch">
+        <figcaption>Assembled prototype wired to its battery pack and switch</figcaption>
+      </figure>
+      <figure>
+        <img src="../assets/projects/scissors-03.jpg" alt="Detachable drivetrain module separated from the blade unit">
+        <figcaption>The detachable drivetrain module, separated from the blade unit</figcaption>
+      </figure>
     </div>
 
     <a class="back" href="../index.html#projects">&larr; Back to all projects</a>
