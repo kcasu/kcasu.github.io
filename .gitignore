@@ -2,6 +2,7 @@
 
 # Source photo originals — the site serves the optimized copies in assets/
 /cameraroll/
+/originals/
 assets/*-original.*
 
 # Design reference screenshots (large binaries; STYLE-GUIDE.md stays tracked)
