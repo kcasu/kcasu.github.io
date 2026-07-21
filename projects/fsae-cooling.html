@@ -73,16 +73,15 @@
     gap: 1.5rem;
     margin-top: 1.5rem;
   }
-  .placeholder-tile {
-    border: 2px dashed var(--myrtle-green);
+  .gallery figure img {
+    width: 100%;
+    display: block;
     border-radius: 16px;
-    aspect-ratio: 4 / 3;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  }
+  .gallery figcaption {
+    margin-top: 0.5rem;
+    font-size: 0.85rem;
     color: var(--myrtle-green);
-    font-weight: 600;
-    background: rgba(94, 170, 168, 0.08);
   }
   .back {
     display: inline-block;
@@ -120,11 +119,15 @@
     <p>To improve thermal performance, I engineered custom cooling jackets for our FSAE electric in-hub motors. Utilizing my experience in CFD and Fluid Dynamics, I conducted parametric simulations in Ansys Fluent to optimize heat dissipation and designed the final parts for metal 3D printing, ensuring both peak performance and manufacturability.</p>
 
     <h2>Gallery</h2>
-    <!-- PLACEHOLDER: swap these tiles for real photos, renders, CAD views, CFD plots -->
     <div class="gallery">
-      <div class="placeholder-tile">Graphic coming soon</div>
-      <div class="placeholder-tile">Graphic coming soon</div>
-      <div class="placeholder-tile">Graphic coming soon</div>
+      <figure>
+        <img src="../assets/projects/cooling-01.jpg" alt="Metal 3D-printed cooling jacket with internal cooling features">
+        <figcaption>The metal 3D-printed cooling jacket, fresh off the printer</figcaption>
+      </figure>
+      <figure>
+        <img src="../assets/projects/cooling-02.jpg" alt="Cooling jacket installed over the in-hub motor with coolant fittings">
+        <figcaption>Installed over the in-hub motor, plumbed and ready to run</figcaption>
+      </figure>
     </div>
 
     <a class="back" href="../index.html#projects">&larr; Back to all projects</a>
