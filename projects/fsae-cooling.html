@@ -83,6 +83,45 @@
     font-size: 0.85rem;
     color: var(--myrtle-green);
   }
+  .timeline {
+    display: flex;
+    align-items: center;
+    gap: clamp(1rem, 4vw, 2.5rem);
+    margin-top: 3.5rem;
+  }
+  .timeline-label {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 600;
+    font-size: clamp(2.4rem, 6vw, 3.4rem);
+    color: var(--burnt-sienna);
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    line-height: 1;
+    flex: 0 0 auto;
+  }
+  .phases {
+    list-style: none;
+    flex: 1;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+  }
+  .phases .dates {
+    display: block;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 500;
+    font-size: 1.35rem;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--myrtle-green);
+  }
+  .phases .desc {
+    display: block;
+    margin-top: 0.15rem;
+    font-size: 0.9rem;
+    color: var(--myrtle-green);
+  }
   .back {
     display: inline-block;
     margin-top: 3rem;
@@ -128,6 +167,18 @@
         <img src="../assets/projects/cooling-02.jpg" alt="Cooling jacket installed over the in-hub motor with coolant fittings">
         <figcaption>Installed over the in-hub motor, plumbed and ready to run</figcaption>
       </figure>
+    </div>
+
+    <div class="timeline">
+      <span class="timeline-label">Timeline</span>
+      <ol class="phases">
+        <li><span class="dates">May &ndash; Aug</span><span class="desc">Design ideation / preliminary design</span></li>
+        <li><span class="dates">Aug &ndash; Oct</span><span class="desc">Design + validation</span></li>
+        <li><span class="dates">Oct &ndash; Feb</span><span class="desc">Manufacturing!</span></li>
+        <li><span class="dates">Feb &ndash; Mar</span><span class="desc">Integration</span></li>
+        <li><span class="dates">Mar &ndash; May</span><span class="desc">Testing</span></li>
+        <li><span class="dates">May &ndash; June</span><span class="desc">Competition!</span></li>
+      </ol>
     </div>
 
     <a class="back" href="../index.html#projects">&larr; Back to all projects</a>
