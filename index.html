@@ -51,6 +51,13 @@
     margin-bottom: 1.5rem;
   }
   .stub p { margin-top: 0.5rem; max-width: 55ch; line-height: 1.6; }
+  .stub p + p { margin-top: 1.25rem; }
+  .stub .tagline-sub {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 500;
+    font-size: 1.2rem;
+    color: var(--midnight-green);
+  }
 
   /* ---- Projects ---- */
   .grid {
@@ -214,6 +221,17 @@
   <section id="projects">
     <h2>Projects</h2>
     <div class="grid">
+      <a class="card" href="projects/rivian-internship.html">
+        <div class="icon">🛻</div>
+        <h3>Rivian Internship</h3>
+        <p>I spent the summer as a Mechanical Design and Test Intern on
+           Rivian&rsquo;s Motor Team. My work involved several projects
+           across the entirety of the team, ranging from running thermal
+           shocks tests to a full redesign of an electromagnetic flux
+           mapping fixture.</p>
+        <div class="tags"><span class="tag">CAD</span><span class="tag">Mechatronics</span><span class="tag">Firmware</span><span class="tag">Thermal Testing</span><span class="tag">CFD</span></div>
+        <span class="more">Read more &rarr;</span>
+      </a>
       <a class="card" href="projects/fsae-aero.html">
         <div class="icon">🏎️</div>
         <h3>FSAE Aero Package</h3>
@@ -307,7 +325,7 @@
       <div class="pin" role="button" tabindex="0" aria-pressed="false">
         <div class="pin-inner">
           <img class="pin-front" src="assets/cameraroll/roll-06.jpg" alt="Photo from KC's camera roll">
-          <div class="pin-back"><p>Caption coming soon &mdash; the story behind this photo goes here.</p></div>
+          <div class="pin-back"><p></p></div>
         </div>
       </div>
       <div class="pin" role="button" tabindex="0" aria-pressed="false">
@@ -319,7 +337,7 @@
       <div class="pin" role="button" tabindex="0" aria-pressed="false">
         <div class="pin-inner">
           <img class="pin-front" src="assets/cameraroll/roll-08.jpg" alt="Photo from KC's camera roll">
-          <div class="pin-back"><p>Caption coming soon &mdash; the story behind this photo goes here.</p></div>
+          <div class="pin-back"><p></p></div>
         </div>
       </div>
       <div class="pin" role="button" tabindex="0" aria-pressed="false">
@@ -350,8 +368,16 @@
   </section>
   <section class="stub" id="flxpped" style="background: var(--sunset);">
     <h2>Flxpped Co</h2>
-    <p>Fashion meets entrepreneurship. Full story coming soon &mdash; follow
-       along on Instagram in the meantime.</p>
+    <p class="tagline-sub">Where Fashion Meets Entrepreneurship.</p>
+    <p>For as long as I can remember I have loved fashion. I am grateful to
+       have learned all of my skills from my grandmother, who put a needle
+       and thread into my hands as soon as I could hold them. From there, I
+       have been able to combine my love for fashion with a passion for
+       sustainability and my never-ending need to engineer into my project,
+       Flxpped Co, where I create upcycled items from second-hand clothing.</p>
+    <p>Through this I have learned how to manipulate materials in all forms,
+       apply my engineering skills to convert 2D shapes into 3D items, and
+       create really unique designs to wear.</p>
     <a class="insta-btn" href="https://www.instagram.com/flxppedco" target="_blank" rel="noopener">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
         <rect x="2" y="2" width="20" height="20" rx="5"/>
