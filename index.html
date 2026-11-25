@@ -62,32 +62,43 @@
   /* ---- Projects ---- */
   .grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
     gap: 1.5rem;
   }
   .card {
-    background: #fff;
-    border: 2px solid var(--myrtle-green);
+    position: relative;
+    aspect-ratio: 3 / 4;
     border-radius: 16px;
-    padding: 1.75rem;
-    display: flex; flex-direction: column; gap: 0.75rem;
-    transition: transform 0.2s, box-shadow 0.2s;
+    overflow: hidden;
+    display: block;
     color: inherit;
     text-decoration: none;
+    background: var(--midnight-green);
+    transition: transform 0.2s, box-shadow 0.2s;
   }
-  .card:hover { transform: translateY(-4px); box-shadow: 0 10px 28px rgba(16, 79, 85, 0.18); }
-  .card .icon { font-size: 1.8rem; }
+  .card:hover { transform: translateY(-4px); box-shadow: 0 10px 28px rgba(16, 79, 85, 0.3); }
+  .card img {
+    position: absolute;
+    inset: 0;
+    width: 100%; height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s;
+  }
+  .card:hover img { transform: scale(1.04); }
+  .card .title-banner {
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    padding: 1.5rem 1.25rem 2.5rem;
+    background: linear-gradient(to bottom, rgba(16, 79, 85, 0.88), rgba(16, 79, 85, 0.6) 70%, rgba(16, 79, 85, 0) 100%);
+  }
   .card h3 {
     font-family: 'Oswald', sans-serif;
-    font-weight: 500;
-    font-size: 1.3rem;
-    color: var(--midnight-green);
-  }
-  .card p { font-size: 0.95rem; line-height: 1.55; flex: 1; }
-  .card .more {
-    color: var(--burnt-sienna);
-    font-weight: 700;
-    font-size: 0.9rem;
+    font-weight: 600;
+    font-size: clamp(1.9rem, 2.6vw, 2.4rem);
+    line-height: 1.1;
+    color: #fff;
+    text-align: right;
+    text-shadow: 0 1px 10px rgba(0, 0, 0, 0.25);
   }
 
   /* ---- About ---- */
@@ -222,50 +233,24 @@
     <h2>Projects</h2>
     <div class="grid">
       <a class="card" href="projects/rivian-internship.html">
-        <div class="icon">🛻</div>
-        <h3>Rivian Internship</h3>
-        <p>I spent the summer as a Mechanical Design and Test Intern on
-           Rivian&rsquo;s Motor Team. My work involved several projects
-           across the entirety of the team, ranging from running thermal
-           shocks tests to a full redesign of an electromagnetic flux
-           mapping fixture.</p>
-        <div class="tags"><span class="tag">CAD</span><span class="tag">Mechatronics</span><span class="tag">Firmware</span><span class="tag">Thermal Testing</span><span class="tag">CFD</span></div>
-        <span class="more">Read more &rarr;</span>
+        <img src="assets/projects/card-rivian.jpg" alt="Kavya at her first day at Rivian, with an R1T truck">
+        <div class="title-banner"><h3>Rivian<br>Internship</h3></div>
       </a>
       <a class="card" href="projects/fsae-aero.html">
-        <div class="icon">🏎️</div>
-        <h3>FSAE Aero Package</h3>
-        <p>Side diffusers and wings for Carnegie Mellon Racing's 2025
-           competition EV &mdash; designed, analyzed, and manufactured as Side
-           Aero System Lead.</p>
-        <div class="tags"><span class="tag">CFD</span><span class="tag">Ansys ACP</span><span class="tag">SolidWorks</span><span class="tag">Carbon Fiber</span></div>
-        <span class="more">Read more &rarr;</span>
+        <img src="assets/projects/card-aero.jpg" alt="Carnegie Mellon Racing's competition EV with side aero package, car #299">
+        <div class="title-banner"><h3>FSAE<br>Side Aero</h3></div>
       </a>
       <a class="card" href="projects/fsae-cooling.html">
-        <div class="icon">🌡️</div>
-        <h3>FSAE Cooling Sleeves</h3>
-        <p>Custom cooling jackets for FSAE electric in-hub motors, optimized
-           with parametric CFD in Ansys Fluent and designed for metal 3D
-           printing.</p>
-        <div class="tags"><span class="tag">Ansys Fluent</span><span class="tag">CFD</span><span class="tag">Metal 3D Printing</span></div>
-        <span class="more">Read more &rarr;</span>
+        <img src="assets/projects/card-cooling.jpg" alt="Close-up of a 3D-printed FSAE cooling sleeve">
+        <div class="title-banner"><h3>FSAE Cooling<br>Sleeves</h3></div>
       </a>
       <a class="card" href="projects/motorized-scissors.html">
-        <div class="icon">✂️</div>
-        <h3>Electric Motorized Scissors</h3>
-        <p>Kitchen scissors re-engineered with a detachable motorized
-           drivetrain to improve accessibility for users with limited hand and
-           wrist mobility.</p>
-        <div class="tags"><span class="tag">Accessibility</span><span class="tag">Mechatronics</span><span class="tag">Prototyping</span></div>
-        <span class="more">Read more &rarr;</span>
+        <img src="assets/projects/card-scissors.jpg" alt="The electric motorized scissors, disassembled">
+        <div class="title-banner"><h3>Modified<br>Scissors</h3></div>
       </a>
       <a class="card" href="projects/aersys-internship.html">
-        <div class="icon">🛩️</div>
-        <h3>Aersys Co. Internship</h3>
-        <p>An automated, standalone UAV package-delivery module for the Aersys
-           Aernode system, integrated and validated as a working prototype.</p>
-        <div class="tags"><span class="tag">UAV</span><span class="tag">Electro-mechanical</span><span class="tag">Testing</span></div>
-        <span class="more">Read more &rarr;</span>
+        <img src="assets/projects/card-aersys.jpg" alt="Kavya using the Aersys Aernode order pickup kiosk">
+        <div class="title-banner"><h3>Aersys Co.<br>Internship</h3></div>
       </a>
     </div>
   </section>
